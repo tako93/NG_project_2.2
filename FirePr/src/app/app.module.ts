@@ -7,7 +7,9 @@ import { TaskComponent } from './task/task.component';
 import { MatCardModule } from '@angular/material/card'
 import { DragDropModule } from '@angular/cdk/drag-drop'
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TaskDialogComponent } from './task-dialog/task-dialog.component';
@@ -27,7 +29,9 @@ import { TaskDialogComponent } from './task-dialog/task-dialog.component';
     MatCardModule,
     DragDropModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

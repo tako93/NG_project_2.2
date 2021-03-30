@@ -2,6 +2,7 @@ import { CdkDragDrop, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Component } from '@angular/core';
 import { Task } from './task/task';
 import { MatDialog } from '@angular/material/dialog'
+import { TaskDialogComponent, TaskDialogResult } from './task-dialog/task-dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -37,14 +38,14 @@ export class AppComponent {
   }
 
   newTask() {
-    const dialog = this.dialog.open(TaskDialogComponent, {
+    const dialogRef = this.dialog.open(TaskDialogComponent, {
       width: '270px',
       data: {
         task: {}
       }
     });
     dialogRef
-      .afterClosed()
+    .afterClosed()
     .subscribe((result: TaskDialogResult) => this.todo.push(result.task))
   }
 }
