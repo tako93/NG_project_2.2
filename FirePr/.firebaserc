@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fire-todo-351c3": {
+      "hosting": {
+        "FirePr": [
+          "fire-todo-351c3"
+        ]
+      }
+    }
+  }
+}

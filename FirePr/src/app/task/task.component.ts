@@ -11,10 +11,11 @@ import { Task } from './task'
 })
 export class TaskComponent implements OnInit {
 
-  @Input()
-  task!: Task;
+  @Input() task: Task;
   @Output() edit = new EventEmitter();
-  constructor() { }
+  constructor() {
+    
+  }
 
   ngOnInit(): void {
   }
